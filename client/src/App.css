@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  padding: 1rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.3rem;
+  margin-bottom: 5rem;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header a.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+header nav {
+  display: flex;
+  gap: 1.4rem;
+}
+
+.post {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.8rem;
+  margin-bottom: 2.4rem;
+}
+
+@media screen and (min-width:690px) {
+  .post {
+    grid-template-columns: .9fr 1.1fr;
+  }
+}
+
+.post .text h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.post .text a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post .info {
+  margin: .6rem 0;
+  color: #888;
+  font-size: .7rem;
+  font-weight: bold;
+  display: flex;
+  gap: .8rem;
+}
+
+.post p.info a.author {
+  color: #333;
+}
+
+.post p.summary {
+  margin: .9rem 0;
+  line-height: 1.4rem;
+}
+
+.login,
+.register {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input {
+  display: block;
+  margin-bottom: .4rem;
+  width: 100%;
+  padding: .5rem .7rem;
+  border: 2px solid #ddd;
+  border-radius: .5rem;
+  background-color: #fff;
+}
+
+button {
+  width: 100%;
+  display: block;
+  background-color: #555;
+  border: 0;
+  color: #fff;
+  border-radius: .5rem;
+  padding: .7rem 0;
+  cursor: pointer;
+}
+
+form.login,
+form.register h1 {
+  text-align: center;
+}
+
+.postPage .image {
+  max-height: 19rem;
+  display: flex;
+  overflow: hidden;
+}
+
+.postPage .image img {
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+}
+
+.postPage h1 {
+  text-align: center;
+  margin: 1rem 0 .5rem;
+}
+
+.postPage time {
+  text-align: center;
+  display: block;
+  font-size: .7rem;
+  color: #aaa;
+}
+
+.postPage .author {
+  text-align: center;
+  margin-bottom: 1.7rem;
+  font-size: .7rem;
+  font-weight: bold;
+}
+
+.postPage .content p {
+  line-height: 1.6rem;
+}
+
+.editRow {
+  text-align: center;
+  margin-bottom: .8rem;
+}
+
+.postPage a.editBtn {
+  background-color: #333;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+  padding: .6rem 2.2rem;
+  text-decoration: none;
+  border-radius: .5rem;
+}
+
+a svg {
+  height: 1.1rem;
+}
